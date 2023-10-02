@@ -9,7 +9,7 @@
                 <li><a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">HOME</a></li>
                 <li><a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="/about">ABOUT US</a></li>
                 <li><a class="nav-link {{ Request::is('portofolio') ? 'active' : '' }} " href="/portofolio">PORTOFOLIO</a></li>
-                <li><a class="nav-link {{ Request::is('article') ? 'active' : '' }}" href="#">ARTICLE</a></li>
+                <li><a class="nav-link {{ Request::is('article') ? 'active' : '' }}" href="/article">ARTICLE</a></li>
                 <li><a class="nav-link {{ Request::is('faq') ? 'active' : '' }}" href="/faq">FAQ</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>

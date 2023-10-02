@@ -281,7 +281,7 @@
 
         <!-- ======= Workflow Section ======= -->
         <section id="workflow" class="workflow">
-            <div class="container" data-aos="zoom-in">
+            <div class="container" data-aos="fade-up">
 
               <div class="section-title">
                 <h2>Work Flow</h2>

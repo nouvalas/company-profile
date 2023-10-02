@@ -11,9 +11,9 @@
         {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
       </div>
 
-      <div class="faq-list">
+      <div class="faq-list" data-aos="fade-up">
         <ul>
-          <li data-aos="fade-up">
+          <li>
             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apa saja layanan yang ditawarkan Line Studio? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
               <p>
@@ -22,7 +22,7 @@
             </div>
           </li>
 
-          <li data-aos="fade-up" data-aos-delay="100">
+          <li>
             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Apa keunggulan Line Studio?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
              <ul>
@@ -36,7 +36,7 @@
             </div>
           </li>
 
-          <li data-aos="fade-up" data-aos-delay="200">
+          <li>
             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Apakah saya bisa bebas custom interior seperti yang saya mau?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
               <p>
@@ -45,7 +45,7 @@
             </div>
           </li>
 
-          <li data-aos="fade-up" data-aos-delay="300">
+          <li>
             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Apakah saya bisa custom furniture satuan? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
               <p>
@@ -54,7 +54,7 @@
             </div>
           </li>
 
-          <li data-aos="fade-up" data-aos-delay="400">
+          <li>
             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Apakah Line Studio menerima project di luar Kota Bandung? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
               <p>
@@ -63,7 +63,7 @@
             </div>
           </li>
 
-          <li data-aos="fade-up" data-aos-delay="500">
+          <li>
             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Berapa biaya yang diperlukan untuk membuat interior di Line Studio? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
               <p>

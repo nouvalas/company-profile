@@ -23,8 +23,6 @@ Route::get('/portofolio',[HomeController::class, 'portofolio']);
 Route::get('/article',[HomeController::class, 'article']);
 Route::get('/faq',[HomeController::class, 'faq']);
 
-
-
 // Auth
 Route::get('/login',[LoginController::class, 'index'])->name('login');
 Route::post('/login',[LoginController::class, 'login']);
