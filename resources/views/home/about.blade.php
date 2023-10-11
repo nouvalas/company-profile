@@ -1,4 +1,4 @@
-@extends('home.index')
+@extends('layouts.master')
 
 @section('container')
 

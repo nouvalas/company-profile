@@ -76,7 +76,7 @@
 
               <div class="row">
 
-                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
                   <div class="post-item position-relative h-100">
         
                     <div class="post-img position-relative overflow-hidden">
@@ -90,7 +90,7 @@
                   </div>
                 </div>
       
-                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
                   <div class="post-item position-relative h-100">
         
                     <div class="post-img position-relative overflow-hidden">
@@ -104,7 +104,7 @@
                   </div>
                 </div>
       
-                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
                   <div class="post-item position-relative h-100">
         
                     <div class="post-img position-relative overflow-hidden">
@@ -118,7 +118,7 @@
                   </div>
                 </div>
       
-                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
                   <div class="post-item position-relative h-100">
         
                     <div class="post-img position-relative overflow-hidden">
@@ -132,7 +132,7 @@
                   </div>
                 </div>
       
-                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
                   <div class="post-item position-relative h-100">
         
                     <div class="post-img position-relative overflow-hidden">
@@ -146,7 +146,7 @@
                   </div>
                 </div>
       
-                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
                   <div class="post-item position-relative h-100">
         
                     <div class="post-img position-relative overflow-hidden">
@@ -386,64 +386,59 @@
         
                   </div>
                 </div>
-      
-                <div class="text-center"><button type="submit">Read More</button></div>
+                
+                <a href="/detailworkflow">
+                <div class="text-center"><button type="submit">Read More</button></div></a>
               </div>
 
             </div>
         </section><!-- End Workflow Section -->
 
-        <!-- ======= Kalkulator Section ======= -->
+        <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
+          <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Estimasi Harga</h2>
-                    <p>Hitung Estimasi Interior Anda</p>
-                </div>
+              <div class="section-title">
+                  <h2>Estimasi Harga</h2>
+                  <p>Hitung Estimasi Interior Anda</p>
+              </div>
 
-                <div class="row mt-5">
-
-                    <div class="col-lg-12 mt-5 mt-lg-0">
-
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="col-md-5 form-group">
-                                  <select class="form-select" aria-label="Default select example">
-                                    <option selected>Material</option>
-                                    <option value="1">BLOCKBOARD MELAMIN FINISHING HPL</option>
-                                    <option value="2">BLOCKBOARD MELAMIN FINISHING DUCO</option>
-                                    <option value="3">FINISHING LUAR DALAM FULL HPL</option>
-                                    <option value="3">FINISHING LUAR DALAM FULL DUCO</option>
-                                  </select>
-                                </div>
-                                <div class="col-md-2 form-group">
-                                    <input type="number" name="name" class="form-control" id="name"
-                                        placeholder="Panjang" required>
-                                </div>
-                                <div class="col-md-2 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="email" id="email"
-                                        placeholder="Tinggi" required>
-                                </div>
-                                <div class="col-md-3 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="email" id="email"
-                                        placeholder="Harga" required>
-                                </div>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Konsultasi Sekarang</button></div>
-                        </form>
-                        
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-xl-9 col-lg-12 mt-4">
+                <form class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="number" name="panjang" class="form-control" id="panjang" placeholder="Panjang(cm)" required>
                     </div>
-
-                </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="number" name="tinggi" class="form-control"  id="tinggi" placeholder="Tinggi(cm)" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                      <select name="material" id="material" class="form-select" aria-label="Default select example">
+                          <option selected>- Material -</option>
+                          <option value="2500000">BLOCKBOARD MELAMIN FINISHING HPL</option>
+                          <option value="2800000">BLOCKBOARD MELAMIN FINISHING DUCO</option>
+                          <option value="3000000">FINISHING LUAR DALAM FULL HPL</option>
+                          <option value="3200000">FINISHING LUAR DALAM FULL DUCO</option>
+                        </select>
+                  </div>
+                  <div class="form-group mt-3">
+                      <input disabled type="number" name="hasil" class="form-control"  id="hasil" placeholder="Hasil"> 
+                  </div><br>
+                  {{-- <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div> --}}
+                  <div class="text-center"><button id="submit" type="submit">Hitung</button></div>
+                </form>
+              </div>
 
             </div>
-        </section><!-- End Kalkulator Section -->
+
+          </div>
+        </section><!-- End Contact Section -->
 
         <!-- ======= Subsidiary Section ======= -->
         <section id="subsidiary" class="subsidiary">
@@ -488,6 +483,7 @@
                 </div>
       
               </div>
+
 
             </div>
         </section><!-- End Subsidiary Section -->

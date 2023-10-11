@@ -356,16 +356,24 @@
   --------------------------------------------------------------*/
   .logo {
     line-height: 1;
+    justify-content: center;
   }
   
   @media (min-width: 1200px) {
     .logo {
-      width: 280px;
+      width: 200px;
     }
   }
+
+  /* @media (min-width: 1200px) {
+    .logo {
+      width: 120px;
+      margin-right: 70px;
+    }
+  } */
   
   .logo img {
-    max-height: 30px;
+    max-height: 40px;
     margin-right: 6px;
   }
   
@@ -388,7 +396,7 @@
   }
   
   .header .toggle-sidebar-btn {
-    font-size: 32px;
+    font-size: 30px;
     padding-left: 10px;
     cursor: pointer;
     color: #012970;
@@ -633,7 +641,7 @@
   
     #main,
     #footer {
-      margin-left: 300px;
+      margin-left: 250px;
     }
   }
   

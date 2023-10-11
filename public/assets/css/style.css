@@ -289,7 +289,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #103896;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -962,31 +962,84 @@ section {
 
 
 /*--------------------------------------------------------------
+# Detail Workflow
+--------------------------------------------------------------*/
+.detailworkflow {
+    margin-top: 50px;
+}
+
+.detailworkflow .row {
+  overflow: hidden;
+}
+
+.detailworkflow .content-item {
+  padding: 40px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: -1px;
+}
+
+.detailworkflow .content-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #383229
+}
+
+.detailworkflow .content-item h4 {
+  font-size: 26px;
+  font-weight: 300;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.detailworkflow .content-item p {
+  color: #383229;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .detailworkflow .content-item {
+    padding: 40px 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Subsidiary
 --------------------------------------------------------------*/
 .subsidiary {
-  /* background-color: #103896; */
-  width: 700px;
-  padding: 15px 0px;
-  margin: 0px 350px;
+  /* background: yellow; */
+  padding: 15px 0;
   text-align: center;
-  justify-content: center;
 }
 
-.subsidiary .row{
-  padding: 30px 0;
-  background: #383229;
+.subsidiary .row {
+  background-color: #383229;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.subsidiary .section-title h3{
+  text-align: start;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #151515;
+  font-family: "Poppins", sans-serif;
 }
 
 .subsidiary img {
-  max-width: 50%;
+  width: 40%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 5px 0;
 }
 
 .subsidiary img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 @media (max-width: 768px) {
@@ -1211,7 +1264,7 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
@@ -1286,174 +1339,165 @@ section {
 /*--------------------------------------------------------------
 # Article
 --------------------------------------------------------------*/
+#journal,
+#journal-blog {
+  height: auto;
+  width: 100%;
+  background: #f8f7f3;
+  padding-bottom: 60px;
+  position: relative;
+}
 
-.article{
+#journal-blog {
+  margin-top: 80px;
+  background: #f8f7f3;
+  padding-bottom: 30px;
+}
+
+#journal .journal-block {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+
+#journal .journal-block .journal-info {
+  position: relative;
+}
+
+.journal-block .journal-info img {
+  max-width: 100%;
+}
+
+.journal-block .journal-info .journal-txt {
+  padding: 25px 0px;
+  position: relative;
+}
+
+.journal-block .journal-info .journal-txt h4 a {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0 0 13px 0;
+  font-weight: 500;
+  color: #292929;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.journal-block .journal-info .journal-txt h4 a:hover {
+  color: #383229;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.journal-block .journal-info .journal-txt p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+/*--------------------------------------------------------------
+# Detail Article
+--------------------------------------------------------------*/
+/*------/ News Single /------*/
+
+.detailarticle{
   margin-top: 50px;
 }
 
-@media (max-width: 767px) {
-
-  .card-box-a,
-  .card-box-b,
-  .card-box-c,
-  .card-box-d {
-    margin-bottom: 2.5rem;
-  }
+.post-information {
+  padding: 3rem 0;
 }
 
-.card-box-a span,
-.card-box-b span,
-.card-box-c span,
-.card-box-d span {
-  line-height: 0;
+.post-content {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
-@media (min-width: 768px) {
-
-  .grid .card-box-a,
-  .grid .card-box-b,
-  .grid .card-box-c,
-  .grid .card-box-d {
-    margin-bottom: 2.5rem;
-  }
+.post-content .post-intro {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+  color: #000000;
+  font-weight: 400;
 }
 
-.card-box-a,
-.card-box-b,
-.card-box-d {
-  position: relative;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+.post-content p {
+  margin-bottom: 1.7rem;
 }
 
-.card-box-a .img-a,
-.card-box-a .img-b,
-.card-box-b .img-a,
-.card-box-b .img-b {
-  transition: 0.8s all ease-in-out;
+.post-content .blockquote {
+  padding: 1rem 3rem 1.7rem 3rem;
+  border-left: 3px solid #2eca6a;
+  color: #000000;
 }
 
-@media (min-width: 768px) {
-
-  .card-box-a:hover .img-a,
-  .card-box-a:hover .img-b,
-  .card-box-b:hover .img-a,
-  .card-box-b:hover .img-b {
-    transform: scale(1.2);
-  }
+.post-content .blockquote footer {
+  text-align: left;
+  padding: 0;
 }
 
-@media (min-width: 768px) {
-
-  .card-box-a .price-a,
-  .card-box-b .price-a {
-    font-size: 0.9rem;
-  }
+.post-footer {
+  padding: 3rem 0 4rem;
 }
 
-@media (min-width: 992px) {
-
-  .card-box-a .price-a,
-  .card-box-b .price-a {
-    font-size: 1rem;
-  }
+.post-share .socials {
+  display: inline-block;
 }
 
-.card-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.post-share .socials li {
+  margin-left: 0.6rem;
 }
 
-.card-shadow {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+/*------/ Comments /------*/
+.box-comments .list-comments li {
+  padding-bottom: 3.5rem;
 }
 
-.card-shadow:before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
+.box-comments .list-comments .comment-avatar {
+  display: table-cell;
+  vertical-align: top;
 }
 
-.card-header-b {
-  padding: 1rem;
-  color: #ffffff;
-  position: absolute;
-  bottom: 20px;
-  z-index: 2;
+.box-comments .list-comments .comment-avatar img {
+  width: 80px;
+  height: 80px;
+}
+
+.box-comments .list-comments .comment-author {
+  font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
-  .card-header-b {
-    bottom: 0px;
+  .box-comments .list-comments .comment-author {
+    font-size: 1.5rem;
   }
 }
 
-@media (min-width: 992px) {
-  .card-header-b {
-    bottom: 20px;
-  }
+.box-comments .list-comments .comment-details {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 25px;
 }
 
-.card-header-b .category-b {
-  font-size: 0.9rem;
-  background-color: #2eca6a;
-  padding: 0.3rem 0.7rem;
-  color: #313131;
-  letter-spacing: 0.03em;
-  border-radius: 50px;
-  text-decoration: none;
+.box-comments .list-comments .comment-description {
+  padding: 0.8rem 0 0.5rem 0;
 }
 
-.card-header-b .title-2 {
-  margin-bottom: 0;
-  padding: 0.6rem 0;
-  font-size: 1.5rem;
+.box-comments .list-comments a {
+  color: #000000;
 }
 
-@media (min-width: 768px) {
-  .card-header-b .title-2 {
-    font-size: 1rem;
-  }
+.box-comments .list-comments span {
+  display: block;
+  color: #2B2A2A;
+  font-style: italic;
 }
 
-@media (min-width: 992px) {
-  .card-header-b .title-2 {
-    font-size: 1.6rem;
-  }
+.box-comments .comment-children {
+  margin-left: 40px;
 }
-
-.card-header-b .title-2 a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.card-header-b .date-b {
-  color: #d8d8d8;
-  font-size: 1rem;
-}
-
-@media (min-width: 768px) {
-  .card-header-b .date-b {
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .card-header-b .date-b {
-    font-size: 1rem;
-  }
-}
-
 /*--------------------------------------------------------------
 # FAQ
 --------------------------------------------------------------*/
@@ -1507,7 +1551,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #97cac2;
+  color: #103896;
 }
 
 .faq .faq-list .icon-show,
@@ -1532,7 +1576,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1bac91;
+  color: #103896;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1635,59 +1679,20 @@ section {
 /*--------------------------------------------------------------
 # Kalkulator
 --------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-  background: #f8f7f3;
-}
-
-.contact .info i {
-  font-size: 20px;
-  background: #103896;
-  color: #fff;
-  float: left;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #151515;
-}
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #484848;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
+.contact{
+  margin-top: 50px;
 }
 
 .contact .php-email-form {
-  width: 100%;
-  background: #f8f7f3;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
 }
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #f8f7f3;
-  background: #ed3c0d;
-  text-align: center;
+  color: #fff;
+  background: #383229;
+  text-align: left;
   padding: 15px;
   font-weight: 600;
 }
@@ -1729,41 +1734,38 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #103896;
+  border-color: #383229;
 }
 
 .contact .php-email-form input {
-  height: 44px;
+  padding: 10px 15px;
 }
 
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+  padding: 12px 15px;
 }
 
 .contact .php-email-form button[type=submit] {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
   background: #383229;
-  color: #f8f7f3;
-  transition: none;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid #103896;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: #103896;
-  color: #fff;
 }
+
+/* Chromium & Safari */
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
 
 @keyframes animate-loading {
   0% {

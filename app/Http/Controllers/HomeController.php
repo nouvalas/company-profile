@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
+use App\Models\Portofolio;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,15 +18,33 @@ class HomeController extends Controller
     }
 
     public function portofolio() {
-        return view('home.portofolio');
+
+
+        $kategori = Kategori::all();
+        $portofolio = Portofolio::all();
+        return view('home.portofolio', compact('portofolio', 'kategori'));
     }
 
     public function article() {
-        return view('home.article');
+
+        $article = Article::all();
+        return view('home.article', compact('article'));
     }
 
     public function faq() {
         return view('home.faq');
+    }
+
+    public function detailarticle($id) {
+
+        $article = Article::find($id);
+        return view('home.detailarticle', [
+            'article' => $article
+        ]);
+    }
+
+    public function detailworkflow() {
+        return view('home.detailworkflow');
     }
 
 }

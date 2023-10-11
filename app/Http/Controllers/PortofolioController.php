@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portofolio;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 
 class PortofolioController extends Controller
@@ -12,9 +13,11 @@ class PortofolioController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function  index()
     {
-        //
+        $portofolio = Portofolio::all();
+
+        return view('dashboard.portofolio.index', compact('portofolio'));
     }
 
     /**
@@ -24,7 +27,8 @@ class PortofolioController extends Controller
      */
     public function create()
     {
-        //
+        $kategori = Kategori::all();
+        return view('dashboard.portofolio.create', compact('kategori'));
     }
 
     /**
@@ -35,7 +39,21 @@ class PortofolioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judul_portofolio' => 'required',
+            'kategori_id' => 'required',
+            'gambar_portofolio' => 'required'
+        ], [
+            'judul_portofolio.required' => "Judul tidak boleh kosong",
+            'kategori_id.required' => "Kategori tidak boleh kosong",
+            'gambar_portofolio.required' => "Gambar tidak boleh kosong"
+        ]);
+
+        $input = $request->all();
+
+        Portofolio::create($input);
+
+        return redirect('/adminportofolio')->with('message', 'Data Berhasil Ditambahkan');
     }
 
     /**
@@ -55,9 +73,16 @@ class PortofolioController extends Controller
      * @param  \App\Models\Portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
-    public function edit(Portofolio $portofolio)
+    public function edit($id)
     {
-        //
+        $kategori = Kategori::all();
+        $portofolio = Portofolio::find($id);
+        return view('dashboard.portofolio.edit', [
+            'portofolio' => $portofolio,
+            'kategori' => $kategori
+        ]);
+
+        // return view('dashboard.portofolio.edit', compact('portofolio'));
     }
 
     /**
@@ -67,9 +92,22 @@ class PortofolioController extends Controller
      * @param  \App\Models\Portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Portofolio $portofolio)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'judul_portofolio' => 'required',
+            'kategori_id' => 'required',
+            'gambar_portofolio' => 'required'
+        ], [
+            'judul_portofolio.required' => "Judul tidak boleh kosong",
+            'kategori_id.required' => "Kategori tidak boleh kosong",
+            'gambar_portofolio.required' => "Gambar tidak boleh kosong"
+        ]);
+
+        $portofolio = Portofolio::find($id);
+        $portofolio->update($request->all());
+
+        return redirect('/adminportofolio')->with('message', 'Data Berhasil Diedit');
     }
 
     /**
@@ -78,8 +116,12 @@ class PortofolioController extends Controller
      * @param  \App\Models\Portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Portofolio $portofolio)
+    public function destroy($id)
     {
-        //
+
+        $portofolio = Portofolio::find($id);
+        $portofolio->delete();
+        
+        return redirect('/adminportofolio')->with('message', 'Data Berhasil Dihapus');
     }
 }

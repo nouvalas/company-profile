@@ -3,7 +3,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="/dashboard">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -22,20 +22,20 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/admin/portofolio">
+            <a href="/adminportofolio">
               <i class="bi bi-circle"></i><span>Portofolio</span>
             </a>
           </li>
           <li>
-            <a href="components-accordion.html">
+            <a href="/adminarticle">
               <i class="bi bi-circle"></i><span>Artcile</span>
             </a>
           </li>
-          <li>
+          {{-- <li>
             <a href="components-badges.html">
               <i class="bi bi-circle"></i><span>Subsidiary</span>
             </a>
-          </li>
+          </li> --}}
         </ul>
       </li><!-- End Components Nav -->
 

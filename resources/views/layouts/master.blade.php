@@ -74,6 +74,18 @@
       })
     </script>
 
+    <script>
+      const panjang = document.getElementById('panjang')
+      const tinggi = document.getElementById('tinggi')
+      const material = document.getElementById('material')
+      const hasil = document.getElementById('hasil')
+      const submit = document.getElementById('submit')
+
+      submit.addEventListener('click', function(){
+          hasil.value = eval(panjang.value * material.value * tinggi.value)
+      })
+    </script>
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
