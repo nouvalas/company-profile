@@ -23,7 +23,7 @@
               <h5 class="card-title">Form Tambah Data Portofolio</h5>
 
               <!-- General Form Elements -->
-              <form action="/storeportofolio" method="POST">
+              <form action="/storeportofolio" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row mb-3">
                   <label for="judul" class="col-sm-2 col-form-label">Judul</label>

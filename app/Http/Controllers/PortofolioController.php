@@ -42,7 +42,7 @@ class PortofolioController extends Controller
         $request->validate([
             'judul_portofolio' => 'required',
             'kategori_id' => 'required',
-            'gambar_portofolio' => 'required'
+            'gambar_portofolio' => 'required|image'
         ], [
             'judul_portofolio.required' => "Judul tidak boleh kosong",
             'kategori_id.required' => "Kategori tidak boleh kosong",
@@ -50,6 +50,14 @@ class PortofolioController extends Controller
         ]);
 
         $input = $request->all();
+
+        if ($image = $request->file('gambar_portofolio')) {
+            $destinationPath = 'image/portofolio/';
+            $imageName = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['gambar_portofolio'] = $imageName;
+        }
+
 
         Portofolio::create($input);
 
@@ -97,15 +105,26 @@ class PortofolioController extends Controller
         $request->validate([
             'judul_portofolio' => 'required',
             'kategori_id' => 'required',
-            'gambar_portofolio' => 'required'
+            'gambar_portofolio' => 'image'
         ], [
             'judul_portofolio.required' => "Judul tidak boleh kosong",
             'kategori_id.required' => "Kategori tidak boleh kosong",
-            'gambar_portofolio.required' => "Gambar tidak boleh kosong"
         ]);
 
+        $input = $request->all();
+
+        if ($image = $request->file('gambar_portofolio')) {
+            $destinationPath = 'image/portofolio/';
+            $imageName = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['gambar_portofolio'] = $imageName;
+        } else{
+            unset($input['gambar_portofolio']);
+        }
+
+
         $portofolio = Portofolio::find($id);
-        $portofolio->update($request->all());
+        $portofolio->update($input);
 
         return redirect('/adminportofolio')->with('message', 'Data Berhasil Diedit');
     }

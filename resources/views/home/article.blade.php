@@ -18,7 +18,7 @@
               
                 
               <a href="/detail{{ $art->id }}article">
-                <img src="assets/img/article/{{ $art->cover_article }}" class="img-responsive" alt="img"></a>
+                <img src="image/article/{{ $art->cover_article }}" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
 

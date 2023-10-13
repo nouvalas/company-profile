@@ -46,7 +46,7 @@
                       <td scope="row">{{ $loop->iteration }}</td>
                       <td scope="row">{{ $port->judul_portofolio }}</td>
                       <td scope="row">{{ $port->kategori->nama_kategori }}</td>
-                      <td scope="row"><img src="assets/img/portofolio/{{ $port->gambar_portofolio }}" alt="" class="img-fluid" width="250" ></td>
+                      <td scope="row"><img src="image/portofolio/{{ $port->gambar_portofolio }}" alt="" class="img-fluid" width="250" ></td>
                       <td>
                         <a href="/edit{{ $port->id }}portofolio" class="btn btn-warning">Edit</a>
                         <a href="/delete{{ $port->id }}portofolio" class="btn btn-danger">Delete</a>

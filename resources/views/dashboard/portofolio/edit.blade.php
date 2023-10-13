@@ -23,7 +23,7 @@
               <h5 class="card-title">Form Edit Data Portofolio</h5>
 
               <!-- General Form Elements -->
-              <form action="/update{{ $portofolio->id }}portofolio" method="POST">
+              <form action="/update{{ $portofolio->id }}portofolio" method="POST" enctype="multipart/form-data">
                 @csrf
                 {{-- @method('PUT') --}}
                 <div class="row mb-3">
@@ -52,7 +52,7 @@
                   </div>
                 </div>
                 <div class="row mb-3">
-                    <img src="assets/img/portofolio/{{ $portofolio->gambar_portofolio }}" alt="img_fluid">
+                    <img src="image/portofolio/{{ $portofolio->gambar_portofolio }}" alt="img_fluid">
                 </div>
                 <div class="row mb-3">
                   <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>

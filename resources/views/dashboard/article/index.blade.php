@@ -47,7 +47,7 @@
                       <td scope="row">{{ $loop->iteration }}</td>
                       <td scope="row">{{ $art->judul_article }}</td>
                       <td scope="row">{!! substr($art->isi_article, 0, 50) !!}...</td>
-                      <td scope="row"><img src="assets/img/article/{{ $art->cover_article }}" alt="" class="img-fluid" width="250" ></td>
+                      <td scope="row"><img src="image/article/{{ $art->cover_article }}" alt="" class="img-fluid" width="250" ></td>
                       {{-- <td scope="row"><img src="assets/img/article/{{ $art->gambar_article }}" alt="" class="img-fluid" width="250" ></td> --}}
                       <td>
                         <a href="/edit{{ $art->id }}article" class="btn btn-warning">Edit</a>

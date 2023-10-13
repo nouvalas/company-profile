@@ -39,8 +39,8 @@ class ArticleController extends Controller
     {
         $request->validate([
             'judul_article' => 'required',
-            'cover_article' => 'required',
-            'gambar_article' => 'required',
+            'cover_article' => 'required|image|dimensions:ratio=1/1',
+            'gambar_article' => 'required|image',
             'isi_article' => 'required'
         ], [
             'judul_article.required' => "Judul tidak boleh kosong",
@@ -50,6 +50,23 @@ class ArticleController extends Controller
         ]);
 
         $input = $request->all();
+
+        if ($image = $request->file('cover_article' )) {
+            $destinationPath = 'image/article/';
+            $imageName = "C" . date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['cover_article'] = $imageName;
+        }
+
+        if ($image = $request->file('gambar_article')) {
+            $destinationPath = 'image/article/';
+            $imageName = "G" . date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['gambar_article'] = $imageName;
+        }
+
+
+
 
         Article::create($input);
 
@@ -94,18 +111,37 @@ class ArticleController extends Controller
     {
         $request->validate([
             'judul_article' => 'required',
-            'cover_article' => 'required',
-            'gambar_article' => 'required',
+            'cover_article' => 'image|dimensions:ratio=1/1',
+            'gambar_article' => 'image',
             'isi_article' => 'required'
         ], [
             'judul_article.required' => "Judul tidak boleh kosong",
-            'cover_article.required' => "Cover tidak boleh kosong",
-            'gambar_article.required' => "Gambar tidak boleh kosong",
+            'cover_article.dimensions' => "Rasio Cover harus 1/1",
             'isi_article.required' => "Isi Artikel tidak boleh kosong"
         ]);
 
+        $input = $request->all();
+
+        if ($image = $request->file('cover_article' )) {
+            $destinationPath = 'image/article/';
+            $imageName = "C" . date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['cover_article'] = $imageName;
+        }else{
+            unset($input['cover_article']);
+        }
+
+        if ($image = $request->file('gambar_article')) {
+            $destinationPath = 'image/article/';
+            $imageName = "G" . date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['gambar_article'] = $imageName;
+        }else{
+            unset($input['gambar_article']);
+        }
+
         $article = Article::find($id);
-        $article->update($request->all());
+        $article->update($input);
 
         return redirect('/adminarticle')->with('message', 'Data Berhasil Diedit');
     }

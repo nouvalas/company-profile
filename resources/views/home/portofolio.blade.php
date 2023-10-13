@@ -34,12 +34,12 @@
           @foreach ($portofolio as $port)
           <div class="col-lg-4 col-md-6 portfolio-item filter-apartemen">              
             <div class="portfolio-wrap">
-              <img src="assets/img/portofolio/{{ $port->gambar_portofolio }}" class="img-fluid" alt="">
+              <img src="image/portofolio/{{ $port->gambar_portofolio }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>{{ $port->judul_portofolio }}</h4>
                 <p>{{ $port->kategori->nama_kategori }}</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portofolio/{{ $port->gambar_portofolio }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="image/portofolio/{{ $port->gambar_portofolio }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>

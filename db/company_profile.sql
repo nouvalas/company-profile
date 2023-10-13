@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Okt 2023 pada 10.47
+-- Waktu pembuatan: 13 Okt 2023 pada 16.34
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 8.0.9
 
@@ -42,8 +42,13 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id`, `judul_article`, `isi_article`, `cover_article`, `gambar_article`, `created_at`, `updated_at`) VALUES
-(1, 'aasdas', '<p>L<em><u>orem ipsum dolor sit ame</u></em>tconsectetur adipisicing elit. Provident culpa pariatur tempora alias unde velit voluptatibus perspiciatis, tenetur aperiam obcaecati sint porro quia recusandae laborum fugiat praesentium iste repudiandae minus cum est repellendus. Error, officiis debitis aut ex blanditiis voluptatem voluptate earum quod ea nulla quas unde fuga repellat, quasi sed culpa. Architecto tempore possimus unde debitis! Nemo sequi, iste ea reiciendis facere voluptates tempora saepe earum, corrupti cum id numquam vel, sint explicabo placeat laborum sapiente consectetur a voluptate? Rerum earum inventore sequi magnam eius vitae animi a assumenda saepe molestiae, aliquid deleniti recusandae, cum perspiciatis! Labore odio odit est iusto reiciendis deleniti similique eos ipsum quos ducimus suscipit rerum illum unde iste, dignissimos nisi sed ut facere animi cupiditate assumenda eaque in. Ducimus adipisci sapiente itaque quo dolore labore dolor, accusantium soluta cumque harum dolorem consequatur ullam non at ab sequi nam reiciendis modi? Quisquam vel, necessitatibus consequuntur deleniti enim dolor aliquid expedita eaque temporibus dolore. Dolore ea aut, dignissimos placeat rem voluptate asperiores! Quo libero vitae facilis. Iste eum expedita repudiandae magni sapiente sequi dolor autem aspernatur. Esse aliquam sint cum facilis laborum nesciunt eligendi officiis distinctio ratione consequuntur at maiores, placeat non quia expedita. Quas, dolorem.</p>', 'article-1.jpg', 'article-2.png', '2023-10-09 11:12:22', '2023-10-10 09:05:01'),
-(3, 'FOMO INTERIOR', '<p class=\"ql-align-justify\"><strong>Prolog:</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dalam konteks interior, FOMO dapat merujuk pada kekhawatiran bahwa anda akan melewatkan tren interior yang sedang popular atau tidak memiliki interior yang cukup menarik untuk dipamerkan kepada tamu.&nbsp;</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Namun, penting untuk diingat bahwa interior rumah harus mencerminkan kepribadian dan gaya hidup anda. Bukan hanya untuk memenuhi harapan atau tren social. Berikut adalah beberapa tips untuk mengatasi FOMO interior.&nbsp;</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Inti:</strong></p><ol><li class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Kenali gaya anda sendiri</strong></li></ol><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Kenali gaya anda sendiri dan pertimbangkan apa yang membuat anda merasa nyaman dan Bahagia dalam sebuah ruangan. Jangan hanya mengikuti tren tanpa mempertimbangkan apakah itu cocok dengan kepribadian dan gaya hidup anda.&nbsp;</span></p><p><br></p><ol><li class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Buatlah ruangan yang multifungsi</strong></li></ol><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Buatlah ruangan yang dapat digunakan untuk lebih dari satu fungsi. Misalnya, sebuah ruang keluarga dapat menjadi ruang kerja atau tempat tidur tamu.&nbsp;</span></p><p><br></p><ol><li class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Pilih furniture yang tahan lama</strong></li></ol><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Pilih furniture yang tahan lama dan memiliki kualitas yang baik daripada mengikuti tren dengan membeli furniture yang murah tetapi cepat rusak. Kamu dapat custom furniture dan interior di Line Studio dengan beragam pilihan material.</span></p><p><br></p><ol><li class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Focus pada kualitas daripada kuantitas</strong></li></ol><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Lebih baik memiliki beberapa item furniture berkualitas daripada memiliki banyak item yang murah dan tidak tahan lama. Pilihlah item yang berkualitas dan sesuai dengan gaya dan kebutuhan anda.&nbsp;</span></p><p><br></p><ol><li class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Jangan terlalu focus pada dekorasi</strong></li></ol><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dekorasi yang terlalu banyak atau berlebihan dapat membuat ruangan terlihat berantakan dan kacau. Pilihlah dekorasi dengan cermat dan pertimbangkan warna, ukuran, dan proporsi yang tepat.</span></p><p><br></p><ol><li class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Cari bantuan professional&nbsp;</strong></li></ol><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Jika anda merasa kewalahan dengan banyaknya pilihan desain dan tren yang ada, anda bisa mempertimbangkan untuk mencari bantuan dari jasa interior professional. Line Studio dapat membantu anda untuk mewujudkan interior impian,</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Penutup:</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dengan mengikuti tips-tips tersebut, anda dapat mengatasi FOMO interior dan menciptakan ruangan yang sesuai dengan gaya dan kebutuhan anda. Ingatlah bahwa interior rumah adalah cerminan dari kepribadian dan gaya hidup anda, bukan hanya untuk mengikuti tren atau harapan social. </span></p><p><br></p><p class=\"ql-align-justify\"><br></p>', 'article-1.jpg', 'article-2.png', '2023-10-11 00:51:29', '2023-10-11 01:46:02');
+(9, 'asasdasfgffffffffffff', '<h2><strong>Lorem, </strong></h2><p>ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ad atque, eos repudiandae debitis impedit ullam iure, assumenda molestiae molestias, nisi quos odit a velit facilis. Laborum eligendi, voluptatum quibusdam veritatis, deserunt, pariatur nulla dignissimos unde ipsum eum voluptas quisquam possimus repellat dolor esse id accusamus? Assumenda animi obcaecati, sunt necessitatibus suscipit nulla sapiente placeat quasi! Dolorem nostrum nulla necessitatibus possimus dignissimos eius repudiandae eaque ex perspiciatis eos tempora asperiores ratione, iure expedita reiciendis molestiae dolorum quibusdam? Incidunt natus eius eligendi officiis fugiat hic accusantium necessitatibus veniam molestias repellat laboriosam consequuntur vel tenetur, aspernatur totam laborum dolore perferendis iste.</p>', 'C20231013111613.jpg', '20231013102308.png', '2023-10-13 03:23:08', '2023-10-13 04:16:14'),
+(10, 'asfafasf', '<p>asffasfasfasf</p>', '20231013102829.jpg', '20231013102828.png', '2023-10-13 03:28:29', '2023-10-13 03:28:29'),
+(11, 'asdasd', '<p>asfasf</p>', '20231013103136Coverjpg', '20231013103136.png', '2023-10-13 03:31:36', '2023-10-13 03:31:36'),
+(13, 'asfasfaf', '<p>asdasdfasd</p>', '20231013103612.jpg', '20231013103612.png', '2023-10-13 03:36:12', '2023-10-13 03:36:12'),
+(14, 'asdasd', '<p>dsadas</p>', '20231013103747.jpg', '20231013103747.jpg', '2023-10-13 03:37:47', '2023-10-13 03:37:47'),
+(15, 'asdda', '<p>asdasd</p>', 'C20231013111602.jpg', 'G20231013104752.jpg', '2023-10-13 03:38:51', '2023-10-13 04:16:03'),
+(17, 'dsadaasdasds', '<p>asdasd</p>', 'C20231013111537.jpg', 'G20231013110452.png', '2023-10-13 04:04:52', '2023-10-13 04:15:38');
 
 -- --------------------------------------------------------
 
@@ -161,11 +166,13 @@ CREATE TABLE `portofolio` (
 --
 
 INSERT INTO `portofolio` (`id`, `kategori_id`, `judul_portofolio`, `gambar_portofolio`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Apartemen Kelas Atas', 'apart-1.png', '2023-10-07 10:35:04', '2023-10-07 10:35:04'),
-(2, 3, 'Bedroom Kelas Menengah', 'bedroom-3.png', '2023-10-07 10:35:37', '2023-10-07 10:35:37'),
-(4, 2, 'Living Room Mewah', 'livingroom-2.png', '2023-10-07 10:37:10', '2023-10-07 10:37:10'),
-(5, 1, 'Apartemen Kelas Menengah', 'apart-3.png', '2023-10-07 11:07:32', '2023-10-07 11:07:32'),
-(6, 2, 'Living Room Menengah', 'livingroom-2.png', '2023-10-09 08:49:50', '2023-10-09 08:49:50');
+(6, 2, 'Living Room Menengah', '20231012.png', '2023-10-09 08:49:50', '2023-10-12 11:55:27'),
+(11, 5, 'Kitchen Keren', '20231013105525.png', '2023-10-11 08:45:48', '2023-10-13 03:55:25'),
+(19, 2, 'dgggccc', '20231013105542.png', '2023-10-12 07:08:23', '2023-10-13 03:55:42'),
+(24, 1, 'apart asda', '20231012.png', '2023-10-12 08:03:51', '2023-10-12 08:03:51'),
+(25, 5, 'asasdaf', '20231012.png', '2023-10-12 08:20:37', '2023-10-12 08:20:37'),
+(26, 3, 'asdasf', '20231012152223.png', '2023-10-12 08:22:23', '2023-10-12 08:22:23'),
+(27, 4, 'asfaf', '20231012152428.png', '2023-10-12 08:24:28', '2023-10-12 08:24:28');
 
 -- --------------------------------------------------------
 
@@ -256,7 +263,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `article`
 --
 ALTER TABLE `article`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
@@ -286,7 +293,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT untuk tabel `portofolio`
 --
 ALTER TABLE `portofolio`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`

@@ -23,7 +23,7 @@
               <h5 class="card-title">Form Edit Data Article</h5>
 
               <!-- General Form Elements -->
-              <form action="/update{{ $article->id }}article" method="POST">
+              <form action="/update{{ $article->id }}article" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row mb-3">
                   <label for="judul" class="col-sm-2 col-form-label">Judul</label>
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="row mb-3">
-                    <img src="assets/img/article/{{ $article->cover_article }}" alt="img_fluid">
+                    <img src="image/article/{{ $article->cover_article }}" alt="img_fluid">
                 </div>
                 <div class="row mb-3">
                   <label for="cover" class="col-sm-2 col-form-label">Cover</label>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="row mb-3">
-                    <img src="assets/img/article/{{ $article->gambar_article }}" alt="img_fluid">
+                    <img src="image/article/{{ $article->gambar_article }}" alt="img_fluid">
                 </div>
                 <div class="row mb-3">
                   <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
@@ -83,7 +83,7 @@
                 
                 <div class="col-sm-10">
                     <a href="/adminarticle" type="button" class="btn btn-secondary">Kembali</a>
-                    <button type="submit" class="btn btn-primary">Tambah</button>
+                    <button type="submit" class="btn btn-primary">Edit</button>
                 </div>
 
 

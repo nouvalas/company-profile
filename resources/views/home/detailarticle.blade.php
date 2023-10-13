@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="news-img-box">
-            <img src="assets/img/article/{{ $article->gambar_article }}" alt="" class="img-fluid">
+            <img src="image/article/{{ $article->gambar_article }}" alt="" class="img-fluid">
           </div>
         </div>
         <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">

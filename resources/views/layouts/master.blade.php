@@ -37,9 +37,9 @@
     <!-- ======= Header ======= -->
     @include('layouts.header')
     <!-- End Header -->
-
+   <!-- ======= Main ======= -->
     @yield('container')
-
+    <!-- End Main -->
     <!-- ======= Footer ======= -->
     @include('layouts.footer')
     <!-- End Footer -->
