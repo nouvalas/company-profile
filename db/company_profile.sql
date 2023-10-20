@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Okt 2023 pada 16.34
+-- Waktu pembuatan: 16 Okt 2023 pada 08.23
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 8.0.9
 
@@ -42,13 +42,7 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id`, `judul_article`, `isi_article`, `cover_article`, `gambar_article`, `created_at`, `updated_at`) VALUES
-(9, 'asasdasfgffffffffffff', '<h2><strong>Lorem, </strong></h2><p>ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ad atque, eos repudiandae debitis impedit ullam iure, assumenda molestiae molestias, nisi quos odit a velit facilis. Laborum eligendi, voluptatum quibusdam veritatis, deserunt, pariatur nulla dignissimos unde ipsum eum voluptas quisquam possimus repellat dolor esse id accusamus? Assumenda animi obcaecati, sunt necessitatibus suscipit nulla sapiente placeat quasi! Dolorem nostrum nulla necessitatibus possimus dignissimos eius repudiandae eaque ex perspiciatis eos tempora asperiores ratione, iure expedita reiciendis molestiae dolorum quibusdam? Incidunt natus eius eligendi officiis fugiat hic accusantium necessitatibus veniam molestias repellat laboriosam consequuntur vel tenetur, aspernatur totam laborum dolore perferendis iste.</p>', 'C20231013111613.jpg', '20231013102308.png', '2023-10-13 03:23:08', '2023-10-13 04:16:14'),
-(10, 'asfafasf', '<p>asffasfasfasf</p>', '20231013102829.jpg', '20231013102828.png', '2023-10-13 03:28:29', '2023-10-13 03:28:29'),
-(11, 'asdasd', '<p>asfasf</p>', '20231013103136Coverjpg', '20231013103136.png', '2023-10-13 03:31:36', '2023-10-13 03:31:36'),
-(13, 'asfasfaf', '<p>asdasdfasd</p>', '20231013103612.jpg', '20231013103612.png', '2023-10-13 03:36:12', '2023-10-13 03:36:12'),
-(14, 'asdasd', '<p>dsadas</p>', '20231013103747.jpg', '20231013103747.jpg', '2023-10-13 03:37:47', '2023-10-13 03:37:47'),
-(15, 'asdda', '<p>asdasd</p>', 'C20231013111602.jpg', 'G20231013104752.jpg', '2023-10-13 03:38:51', '2023-10-13 04:16:03'),
-(17, 'dsadaasdasds', '<p>asdasd</p>', 'C20231013111537.jpg', 'G20231013110452.png', '2023-10-13 04:04:52', '2023-10-13 04:15:38');
+(1, 'FOMO ARTICLE', '<p class=\"ql-align-justify\"><strong>Prolog:</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dalam konteks interior, FOMO dapat merujuk pada kekhawatiran bahwa anda akan melewatkan tren interior yang sedang popular atau tidak memiliki interior yang cukup menarik untuk dipamerkan kepada tamu.&nbsp;</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Namun, penting untuk diingat bahwa interior rumah harus mencerminkan kepribadian dan gaya hidup anda. Bukan hanya untuk memenuhi harapan atau tren social. Berikut adalah beberapa tips untuk mengatasi FOMO interior.&nbsp;</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Inti:</strong></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">1.Kenali gaya anda sendiri</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Kenali gaya anda sendiri dan pertimbangkan apa yang membuat anda merasa nyaman dan Bahagia dalam sebuah ruangan. Jangan hanya mengikuti tren tanpa mempertimbangkan apakah itu cocok dengan kepribadian dan gaya hidup anda.&nbsp;</span></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">2.Buatlah ruangan yang multifungsi</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Buatlah ruangan yang dapat digunakan untuk lebih dari satu fungsi. Misalnya, sebuah ruang keluarga dapat menjadi ruang kerja atau tempat tidur tamu.&nbsp;</span></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">3.Pilih furniture yang tahan lama</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Pilih furniture yang tahan lama dan memiliki kualitas yang baik daripada mengikuti tren dengan membeli furniture yang murah tetapi cepat rusak. Kamu dapat custom furniture dan interior di Line Studio dengan beragam pilihan material.</span></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">4.Focus pada kualitas daripada kuantitas</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Lebih baik memiliki beberapa item furniture berkualitas daripada memiliki banyak item yang murah dan tidak tahan lama. Pilihlah item yang berkualitas dan sesuai dengan gaya dan kebutuhan anda.&nbsp;</span></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">5.Jangan terlalu focus pada dekorasi</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dekorasi yang terlalu banyak atau berlebihan dapat membuat ruangan terlihat berantakan dan kacau. Pilihlah dekorasi dengan cermat dan pertimbangkan warna, ukuran, dan proporsi yang tepat.</span></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">6.Cari bantuan professional&nbsp;</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Jika anda merasa kewalahan dengan banyaknya pilihan desain dan tren yang ada, anda bisa mempertimbangkan untuk mencari bantuan dari jasa interior professional. Line Studio dapat membantu anda untuk mewujudkan interior impian,</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Penutup:</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dengan mengikuti tips-tips tersebut, anda dapat mengatasi FOMO interior dan menciptakan ruangan yang sesuai dengan gaya dan kebutuhan anda. Ingatlah bahwa interior rumah adalah cerminan dari kepribadian dan gaya hidup anda, bukan hanya untuk mengikuti tren atau harapan social. </span></p><p><br></p><p><br></p>', 'C20231016061701.jpg', 'G20231016061701.png', '2023-10-15 23:17:01', '2023-10-15 23:18:58');
 
 -- --------------------------------------------------------
 
@@ -107,14 +101,12 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(19, '2014_10_12_000000_create_users_table', 1),
-(20, '2014_10_12_100000_create_password_resets_table', 1),
-(21, '2019_08_19_000000_create_failed_jobs_table', 1),
-(22, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(23, '2023_10_01_150053_create_portofolio_table', 2),
-(24, '2023_10_05_165450_create_article_table', 2),
-(25, '2023_10_07_140755_create_kategori_table', 2),
-(27, '2023_10_07_165617_create_portofolio_table', 3);
+(5, '2014_10_12_000000_create_users_table', 1),
+(6, '2014_10_12_100000_create_password_resets_table', 1),
+(7, '2019_08_19_000000_create_failed_jobs_table', 1),
+(8, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(11, '2023_10_05_165450_create_article_table', 2),
+(12, '2023_10_07_140755_create_kategori_table', 2);
 
 -- --------------------------------------------------------
 
@@ -166,13 +158,21 @@ CREATE TABLE `portofolio` (
 --
 
 INSERT INTO `portofolio` (`id`, `kategori_id`, `judul_portofolio`, `gambar_portofolio`, `created_at`, `updated_at`) VALUES
-(6, 2, 'Living Room Menengah', '20231012.png', '2023-10-09 08:49:50', '2023-10-12 11:55:27'),
-(11, 5, 'Kitchen Keren', '20231013105525.png', '2023-10-11 08:45:48', '2023-10-13 03:55:25'),
-(19, 2, 'dgggccc', '20231013105542.png', '2023-10-12 07:08:23', '2023-10-13 03:55:42'),
-(24, 1, 'apart asda', '20231012.png', '2023-10-12 08:03:51', '2023-10-12 08:03:51'),
-(25, 5, 'asasdaf', '20231012.png', '2023-10-12 08:20:37', '2023-10-12 08:20:37'),
-(26, 3, 'asdasf', '20231012152223.png', '2023-10-12 08:22:23', '2023-10-12 08:22:23'),
-(27, 4, 'asfaf', '20231012152428.png', '2023-10-12 08:24:28', '2023-10-12 08:24:28');
+(1, 1, 'PARAHYANGAN RESIDENCE MR.MICHAEL 1', '20231016055458.png', '2023-10-15 22:54:58', '2023-10-15 22:54:58'),
+(2, 1, 'PARAHYANGAN RESIDENCE MR.MICHAEL 2', '20231016055516.png', '2023-10-15 22:55:16', '2023-10-15 22:55:16'),
+(3, 1, 'PARAHYANGAN RESIDENCE MR.MICHAEL 3', '20231016055533.png', '2023-10-15 22:55:33', '2023-10-15 22:55:33'),
+(4, 3, 'BEDROOM MR RICKY 1', '20231016055609.png', '2023-10-15 22:56:09', '2023-10-15 22:56:09'),
+(5, 3, 'BEDROOM MR RICKY 2', '20231016055629.png', '2023-10-15 22:56:29', '2023-10-15 22:56:29'),
+(6, 3, 'BEDROOM MR RICKY 3', '20231016055645.png', '2023-10-15 22:56:45', '2023-10-15 22:56:45'),
+(7, 5, 'KITCHEN BU HANY 1', '20231016055724.png', '2023-10-15 22:57:24', '2023-10-15 22:57:24'),
+(8, 5, 'KITCHEN BU HANY 2', '20231016055740.png', '2023-10-15 22:57:40', '2023-10-15 22:57:40'),
+(9, 5, 'KITCHEN BU HANY 3', '20231016055756.png', '2023-10-15 22:57:56', '2023-10-15 22:57:56'),
+(10, 2, 'LIVING ROOM BU HANY 1', '20231016055832.png', '2023-10-15 22:58:32', '2023-10-15 22:58:32'),
+(11, 2, 'LIVING ROOM BU HANY 2', '20231016055845.png', '2023-10-15 22:58:45', '2023-10-15 22:58:45'),
+(12, 2, 'LIVING ROOM BU HANY 3', '20231016055902.png', '2023-10-15 22:59:02', '2023-10-15 22:59:02'),
+(13, 4, 'CAFE BU IMEY 1', '20231016055959.png', '2023-10-15 22:59:59', '2023-10-15 22:59:59'),
+(14, 4, 'CAFE BU IMEY 2', '20231016060012.png', '2023-10-15 23:00:12', '2023-10-15 23:00:12'),
+(15, 4, 'CAFE BU IMEY 3', '20231016060027.png', '2023-10-15 23:00:27', '2023-10-15 23:00:27');
 
 -- --------------------------------------------------------
 
@@ -196,7 +196,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'LineStudio', 'linestudio@gmail.com', NULL, '$2y$10$PEHwoifr4XVLKYEa4mb0ae9iCs9edRE2jc6I5yn8h1BgmMy48/Yzu', NULL, '2023-10-07 10:09:45', '2023-10-07 10:09:45');
+(1, 'LineStudio', 'linezstudio@gmail.com', NULL, '$2y$10$FaLtMHQhIXKco/4Xpi2/Memx2ecC5Jx1ylgryFtGG3FQ4Iv41YkZa', NULL, '2023-10-15 22:51:56', '2023-10-15 22:51:56');
 
 --
 -- Indexes for dumped tables
@@ -245,8 +245,7 @@ ALTER TABLE `personal_access_tokens`
 -- Indeks untuk tabel `portofolio`
 --
 ALTER TABLE `portofolio`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `portofolio_kategori_id_foreign` (`kategori_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `users`
@@ -263,7 +262,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `article`
 --
 ALTER TABLE `article`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
@@ -281,7 +280,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `personal_access_tokens`
@@ -293,23 +292,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT untuk tabel `portofolio`
 --
 ALTER TABLE `portofolio`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
---
-
---
--- Ketidakleluasaan untuk tabel `portofolio`
---
-ALTER TABLE `portofolio`
-  ADD CONSTRAINT `portofolio_kategori_id_foreign` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

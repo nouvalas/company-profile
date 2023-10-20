@@ -1,10 +1,4 @@
-/**
-* Template Name: Gp
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -148,7 +142,7 @@ h6 {
 #  Get Startet Button
 --------------------------------------------------------------*/
 .get-started-btn {
-  color: #fff;
+  color: #151515;
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
@@ -166,7 +160,7 @@ h6 {
 @media (max-width: 992px) {
   .get-started-btn {
     padding: 7px 20px 8px 20px;
-    margin-right: 15px;
+    margin-right: 10px;
   }
 }
 
@@ -398,20 +392,35 @@ h6 {
 .hero {
   overflow-x: hidden;
   padding: 0;
+
 }
 
 .hero .carousel {
   width: 100%;
-  min-height: 100vh;
+  height: 500px;
+  /* min-height: 100vh; */
   padding: 80px 0;
-  margin: 0;
+  margin-top: 80px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero .carousel {
+    /* background-color: #103896; */
+    height: 50px;
+      /* min-height: 100vh;   */
+  }
+
+  .hero .carousel-item  {
+    background-size: contain;
+    /* background-size: 50px; */
+  }
 }
 
 .hero .carousel-item {
   position: absolute;
   inset: 0;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -517,7 +526,7 @@ h6 {
 .hero .carousel-control-prev {
   /* background-color: #103896; */
   width: 40px;
-  margin: 300px 0px;
+  margin: 250px 0px;
   font-size: 35px;
   -webkit-text-stroke-width: 8px;
   color: #151515;
@@ -651,6 +660,14 @@ section {
   margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .recent-blog-posts .post-item {
+    width: 70%;
+    margin-left: 50px;
+
+  }
+}
+
 .recent-blog-posts .post-item .meta i {
   font-size: 16px;
   color: var(--color-primary);
@@ -719,6 +736,7 @@ section {
   display: inline-block;
   padding: 15px 0;
 }
+
 
 .benefits img:hover {
   transform: scale(1.15);
@@ -833,7 +851,6 @@ section {
   justify-content: center;
 } */
 .kategori .carousel-control-prev {
-  /* background-color: #103896; */
   width: 30px;
   margin-left: -30px;
   margin-bottom: 40px;
@@ -841,7 +858,6 @@ section {
 
 .kategori .carousel-control-next {
   width: 30px;
-  /* background-color: #103896; */
   margin-right: -30px;
   margin-bottom: 40px;
 }
@@ -890,6 +906,34 @@ section {
   transform: translateX(0);
 }
 
+/* mobile scree */
+@media(max-width:768px){
+  .kategori .carousel-inner .carousel-item>div{
+    display: none;
+  }
+  .kategori .carousel-inner .carousel-item>div:first-child{
+    display: block;
+  }
+  .kategori .carousel-control-prev {
+    width: 30px;
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
+  
+  .kategori .carousel-control-next {
+    width: 30px;
+    margin-right: -20px;
+    margin-bottom: 40px;
+  }
+}
+
+/* .kategori .car:hover img {
+  transform: scale(1.1);
+}
+
+.kategori .car:hover .kategori-info {
+  opacity: 1;
+} */
 /*--------------------------------------------------------------
 # Workflow
 --------------------------------------------------------------*/
@@ -897,6 +941,7 @@ section {
 .workflow {
   /* background: #383229; */
   padding: 15px 0;
+  text-align: center;
 }
 
 /* .workflow .post-item {
@@ -909,11 +954,16 @@ section {
 
 .workflow .post-item {
   /* background: #383229; */
-  margin-left: 50px;
+  margin-left: 50px;  
   width: 150px;
   justify-content: center;
   text-align: center;
   
+}
+@media (max-width: 768px) {
+  .workflow .post-item {
+   margin-left: 20px;    
+  } 
 }
 .workflow .post-item .post-title {
   font-size: 15px;
@@ -956,7 +1006,7 @@ section {
 
 @media (max-width: 768px) {
   .workflow img {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 
@@ -1679,9 +1729,9 @@ section {
 /*--------------------------------------------------------------
 # Kalkulator
 --------------------------------------------------------------*/
-.contact{
+/* .contact{
   margin-top: 50px;
-}
+} */
 
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);

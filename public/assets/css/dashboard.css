@@ -592,10 +592,9 @@
     transition: 0.3s;
   }
   
-  .header-nav .profile .dropdown-item i {
-    margin-right: 10px;
-    font-size: 18px;
-    line-height: 0;
+  .header-nav .btn {
+    margin-right: 20px;
+
   }
   
   .header-nav .profile .dropdown-item:hover {

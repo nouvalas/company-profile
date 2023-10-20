@@ -13,4 +13,10 @@ class Kategori extends Model
     protected $fillable = [
         'nama_kategori'
     ]; 
+
+    public function portofolio()
+    {
+        return $this->hasMany(Portofolio::class);
+    }
 }
+

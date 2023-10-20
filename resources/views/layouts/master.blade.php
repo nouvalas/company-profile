@@ -29,7 +29,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -37,7 +37,7 @@
     <!-- ======= Header ======= -->
     @include('layouts.header')
     <!-- End Header -->
-   <!-- ======= Main ======= -->
+    <!-- ======= Main ======= -->
     @yield('container')
     <!-- End Main -->
     <!-- ======= Footer ======= -->
@@ -46,7 +46,7 @@
 
     <div id="preloader"></div>
     <a href="https://wa.me/+6281249373467" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bx bxl-whatsapp"></i></a>
+            class="bx bxl-whatsapp"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -56,38 +56,14 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-    
 
-    <script>
-      var items = document.querySelectorAll('.kategori .carousel .carousel-item');
-      items.forEach((e)=>{
-        const slide = 4;
-        let next = e.nextElementSibling;
-        for (var i = 0; i < slide; i++){
-          if (!next) {
-            next = items[0]
-          }
-          let clonechild = next.cloneNode(true)
-          e.appendChild(clonechild.children[0])
-          next = next.nextElementSibling
-        }
-      })
-    </script>
 
-    <script>
-      const panjang = document.getElementById('panjang')
-      const tinggi = document.getElementById('tinggi')
-      const material = document.getElementById('material')
-      const hasil = document.getElementById('hasil')
-      const submit = document.getElementById('submit')
-
-      submit.addEventListener('click', function(){
-          hasil.value = eval(panjang.value * material.value * tinggi.value)
-      })
-    </script>
 
     <!-- Template Main JS File -->
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
+
+    @yield('script')
 
 </body>
 

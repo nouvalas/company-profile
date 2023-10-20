@@ -58,7 +58,7 @@
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/dashboard.js"></script>
 
-  @yield('scripts')
+  
 
 </body>
 

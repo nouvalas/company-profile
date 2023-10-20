@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Banner;
 use App\Models\Portofolio;
 use App\Models\Kategori;
 use Illuminate\Http\Request;
@@ -10,7 +11,9 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
-        return view('home.index');
+
+        $banner = Banner::all();
+        return view('home.index', compact('banner'));
     }
 
     public function about() {
@@ -22,6 +25,8 @@ class HomeController extends Controller
 
         $kategori = Kategori::all();
         $portofolio = Portofolio::all();
+
+
         return view('home.portofolio', compact('portofolio', 'kategori'));
     }
 

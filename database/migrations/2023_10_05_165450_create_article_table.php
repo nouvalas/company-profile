@@ -19,7 +19,7 @@ class CreateArticleTable extends Migration
             $table->text('isi_article');
             $table->string('cover_article');
             $table->string('gambar_article');
-            $table->timestamps('created_at');
+            $table->timestamps();
         });
     }
 

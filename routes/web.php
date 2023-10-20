@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortofolioController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\KalkulatorController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,6 +37,7 @@ Route::get('/faq',[HomeController::class, 'faq']);
 Route::get('/detail{id}article',[HomeController::class, 'detailarticle']);
 Route::get('/detailworkflow',[HomeController::class, 'detailworkflow']);
 
+
 // Auth
 Route::get('/login',[LoginController::class, 'index'])->name('login');
 Route::post('/login',[LoginController::class, 'login']);
@@ -62,3 +64,11 @@ Route::post('/storearticle',[ArticleController::class, 'store']);
 Route::get('/edit{id}article',[ArticleController::class, 'edit'])->middleware('auth');
 Route::post('/update{id}article',[ArticleController::class, 'update']);
 Route::get('/delete{id}article',[ArticleController::class, 'destroy']);
+
+// Banner
+Route::get('/adminbanner',[BannerController::class, 'index'])->middleware('auth');
+Route::get('/createbanner',[BannerController::class, 'create'])->middleware('auth');
+Route::post('/storebanner',[BannerController::class, 'store']);
+Route::get('/edit{id}banner',[BannerController::class, 'edit'])->middleware('auth');
+Route::post('/update{id}banner',[BannerController::class, 'update']);
+Route::get('/delete{id}banner',[BannerController::class, 'destroy']);
