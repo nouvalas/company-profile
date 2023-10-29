@@ -38,6 +38,23 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Hyperlink</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" aria-label="Default select example" name="hyperlink_id">
+                                            <option disabled value="">- Pilih Hyperlink -</option>
+                                            @foreach ($hyperlink as $hyp)
+                                                <option value="{{ $hyp->id }}"
+                                                    {{ old('hyperlink_id', $banner->hyperlink_id) == $hyp->id ? 'selected' : null }}>
+                                                    {{ $hyp->nama_hyperlink }}</option>
+                                            @endforeach
+                                        </select>
+
+                                        @error('hyperlink_id')
+                                            <small style="color: red">{{ $message }}</small>
+                                        @enderror
+                                    </div>
+                                </div>
 
                                 <div class="col-sm-10">
                                     <a href="/adminbanner" type="button" class="btn btn-secondary">Kembali</a>

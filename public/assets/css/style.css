@@ -1096,6 +1096,10 @@ section {
   .subsidiary img {
     max-width: 40%;
   }
+  .subsidiary .img-set {
+    max-width: 100%;
+  }
+
 }
 
 /*--------------------------------------------------------------

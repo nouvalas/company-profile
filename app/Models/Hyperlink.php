@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Banner extends Model
+class Hyperlink extends Model
 {
     use HasFactory;
-
-    protected $table = 'banner';
+    protected $table = 'hyperlink';
     protected $fillable = [
-        'gambar_banner', 'hyperlink_id'
+        'nama_hyperlink', 'link'
     ]; 
 
-    public function hyperlink()
+    public function banner()
     {
-        return $this->belongsTo(Hyperlink::class);
+        return $this->hasMany(Banner::class);
     }
 }

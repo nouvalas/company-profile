@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         User::create([
             'name' => 'LineStudio',
-            'email' => 'linestudio@gmail.com',
-            'password' => Hash::make('admin123')
+            'email' => 'linezstudio@gmail.com',
+            'password' => Hash::make('linestudio.admin26')
         ]);
     }
 }

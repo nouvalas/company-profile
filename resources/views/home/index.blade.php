@@ -7,8 +7,9 @@
 
         <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
             @foreach ($banner as $ban)
-                <div class="carousel-item active" style="background-image: url(image/banner/{{ $ban->gambar_banner }})">
-                    <a href="/portofolio" class="readmore stretched-link"></a>
+                <div class="carousel-item active">
+                    <a href="{{ $ban->hyperlink->link }}" class="readmore stretched-link">
+                        <img src="image/banner/{{ $ban->gambar_banner }}" alt="" class="img-fluid"></a>
                 </div>
             @endforeach
 
@@ -366,7 +367,7 @@
                             </div>
 
                             <div class="post-content d-flex flex-column">
-                                <h3 class="post-title">Produk</h3>
+                                <h3 class="post-title">Produksi</h3>
                             </div>
 
                         </div>
@@ -466,36 +467,55 @@
                 <div class="row rounded-4">
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary1.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/daksastudio.interior?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary5.png" class="img-fluid" alt="">
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary4.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/elementstudio.interior?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary6.png" class="img-fluid" alt="">
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary2.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/eskalasiinterior?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary7.png" class="img-fluid" alt="">
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary3.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/lukita.project?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary8.png" class="img-fluid" alt="">
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary5.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/circlestudio_bdg?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary1.png" style="width:60px" class="img-set"
+                                alt="">
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary6.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/seven.artstudio?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary4.png" style="width:60px" class="img-set"
+                                alt="">
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary7.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/furnituremodern_bdg?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary2.png" class="img-fluid" alt="">
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/subsidiary/subsidiary8.png" class="img-fluid" alt="">
+                        <a href="https://instagram.com/kitchensetminimalis_bdg?igshid=MzRlODBiNWFlZA==">
+                            <img src="assets/img/subsidiary/subsidiary3.png" class="img-fluid" alt="">
+                        </a>
                     </div>
+
 
                 </div>
 

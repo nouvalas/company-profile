@@ -8,8 +8,8 @@
                     <div class="footer-info">
                         <h4>GET IN TOUCH OUR MEDIA :</h4>
                         <div class="social-links mt-3">
-                            <a href="https://instagram.com/linestudiointerior?igshid=MzRlODBiNWFlZA==" class="instagram"><i
-                                    class="bx bxl-instagram"></i></a>
+                            <a href="https://instagram.com/linestudiointerior?igshid=MzRlODBiNWFlZA=="
+                                class="instagram"><i class="bx bxl-instagram"></i></a>
                             <a href="https://www.facebook.com/profile.php?id=100017981292348" class="facebook"><i
                                     class="bx bxl-facebook"></i></a>
                             <a href="https://wa.me/+6281249373467" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
@@ -19,7 +19,7 @@
                         <h4>Pelayanan Kantor</h4>
                         <p>
                             Senin - Jumat : 09:00 - 17:00 <br>
-                            Sabtu : 09:00 - 15:00
+                            Sabtu : 09:00 - 14:00
                         </p>
                     </div>
                 </div>

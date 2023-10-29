@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Hyperlink;
 use Illuminate\Http\Request;
 
 class BannerController extends Controller
@@ -26,7 +27,8 @@ class BannerController extends Controller
      */
     public function create()
     {
-        return view('dashboard.banner.create');
+        $hyperlink = Hyperlink::all();
+        return view('dashboard.banner.create', compact('hyperlink'));
     }
 
     /**
@@ -38,10 +40,12 @@ class BannerController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'gambar_banner' => 'required|image'
+            'gambar_banner' => 'required|image',
+            'hyperlink_id' => 'required'
             
         ], [
-            'gambar_banner.required' => "Gambar tidak boleh kosong"
+            'gambar_banner.required' => "Gambar tidak boleh kosong",
+            'hyperlink_id.required' => "Hyperlink tidak boleh kosong"
         ]);
 
         $input = $request->all();
@@ -78,9 +82,11 @@ class BannerController extends Controller
      */
     public function edit($id)
     {
-        $banner = banner::find($id);
+        $hyperlink = Hyperlink::all();
+        $banner = Banner::find($id);
         return view('dashboard.banner.edit', [
-            'banner' => $banner
+            'banner' => $banner,
+            'hyperlink' => $hyperlink
         ]);
     }
 
@@ -94,7 +100,10 @@ class BannerController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'gambar_banner' => 'image'
+            'gambar_banner' => 'image',
+            'hyperlink_id' => 'required'
+        ],[
+            'hyperlink_id.required' => "Hyperlink tidak boleh kosong"
         ]);
 
         $input = $request->all();

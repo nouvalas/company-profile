@@ -34,6 +34,7 @@
                                     <tr>
                                         <th scope="col">No</th>
                                         <th scope="col">Gambar</th>
+                                        <th scope="col">Hyperlink</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
@@ -43,6 +44,7 @@
                                             <td scope="row">{{ $loop->iteration }}</td>
                                             <td scope="row"><img src="image/banner/{{ $ban->gambar_banner }}"
                                                     alt="" class="img-fluid" width="250"></td>
+                                            <td scope="row">{{ $ban->hyperlink->nama_hyperlink }}</td>
                                             <td>
                                                 <a href="/edit{{ $ban->id }}banner" class="btn btn-warning">Edit</a>
                                                 <a href="/delete{{ $ban->id }}banner" class="btn btn-danger">Delete</a>
