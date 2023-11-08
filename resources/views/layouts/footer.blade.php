@@ -15,6 +15,9 @@
                             <a href="https://wa.me/+6281249373467" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
                             <a href="https://www.tiktok.com/@linestudio.interior?_t=8egRsU0Vtn0&_r=1" class="tiktok"><i
                                     class="bx bxl-tiktok"></i></a>
+                            <a href="https://youtube.com/@Linestudiointerior?si=xk_j0gWECQzwQN_T" class="youtube"><i
+                                    class="bx bxl-youtube"></i></a>
+                            <a href="https://pin.it/7kdoFhh" class="pinterest"><i class="bx bxl-pinterest"></i></a>
                         </div><br>
                         <h4>Pelayanan Kantor</h4>
                         <p>

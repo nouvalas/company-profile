@@ -435,12 +435,6 @@ h6 {
   inset: 1;
 }
 
-/* .hero .info {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-} */
-
 @media (max-width: 768px) {
   .hero .info {
     padding: 0 50px;

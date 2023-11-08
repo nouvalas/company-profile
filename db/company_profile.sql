@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Okt 2023 pada 13.56
+-- Waktu pembuatan: 29 Okt 2023 pada 12.33
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 8.0.9
 
@@ -52,6 +52,7 @@ INSERT INTO `article` (`id`, `judul_article`, `isi_article`, `cover_article`, `g
 
 CREATE TABLE `banner` (
   `id` bigint(20) UNSIGNED NOT NULL,
+  `hyperlink_id` bigint(20) UNSIGNED NOT NULL,
   `gambar_banner` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -61,10 +62,10 @@ CREATE TABLE `banner` (
 -- Dumping data untuk tabel `banner`
 --
 
-INSERT INTO `banner` (`id`, `gambar_banner`, `created_at`, `updated_at`) VALUES
-(2, '20231020091748.png', '2023-10-20 02:17:49', '2023-10-20 02:17:49'),
-(3, '20231020091804.png', '2023-10-20 02:18:04', '2023-10-20 02:18:04'),
-(4, '20231020091814.png', '2023-10-20 02:18:14', '2023-10-20 02:18:14');
+INSERT INTO `banner` (`id`, `hyperlink_id`, `gambar_banner`, `created_at`, `updated_at`) VALUES
+(1, 2, '20231027120252.png', '2023-10-27 05:02:52', '2023-10-27 06:26:23'),
+(2, 1, '20231029111017.png', '2023-10-29 04:10:17', '2023-10-29 04:10:17'),
+(3, 2, '20231029111027.png', '2023-10-29 04:10:27', '2023-10-29 04:10:27');
 
 -- --------------------------------------------------------
 
@@ -81,6 +82,28 @@ CREATE TABLE `failed_jobs` (
   `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `hyperlink`
+--
+
+CREATE TABLE `hyperlink` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama_hyperlink` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `link` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `hyperlink`
+--
+
+INSERT INTO `hyperlink` (`id`, `nama_hyperlink`, `link`, `created_at`, `updated_at`) VALUES
+(1, 'Portofolio', '/portofolio', NULL, NULL),
+(2, 'WhatsApp', 'https://wa.me/+6281249373467', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -129,7 +152,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2019_12_14_000001_create_personal_access_tokens_table', 1),
 (11, '2023_10_05_165450_create_article_table', 2),
 (12, '2023_10_07_140755_create_kategori_table', 2),
-(13, '2023_10_20_074752_create_banner_table', 3);
+(15, '2023_10_27_103928_create_hyperlink_table', 3);
 
 -- --------------------------------------------------------
 
@@ -246,6 +269,12 @@ ALTER TABLE `failed_jobs`
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
 
 --
+-- Indeks untuk tabel `hyperlink`
+--
+ALTER TABLE `hyperlink`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
@@ -298,13 +327,19 @@ ALTER TABLE `article`
 -- AUTO_INCREMENT untuk tabel `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `hyperlink`
+--
+ALTER TABLE `hyperlink`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori`
@@ -316,7 +351,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `personal_access_tokens`
