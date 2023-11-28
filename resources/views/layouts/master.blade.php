@@ -5,6 +5,19 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YWR8J6FNV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7YWR8J6FNV');
+    </script>
+
     <title>Line Studio - Interior Design</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
